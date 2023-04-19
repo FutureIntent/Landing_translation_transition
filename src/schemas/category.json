@@ -1,0 +1,20 @@
+{
+  "Main" : {
+    "title" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading6",
+        "label" : "Title",
+        "placeholder" : "Category title"
+      }
+    },
+    "type_of_category" : {
+      "type" : "Select",
+      "config" : {
+        "options" : [ "Work", "Segment" ],
+        "default_value" : "Work",
+        "label" : "Type of category"
+      }
+    }
+  }
+}

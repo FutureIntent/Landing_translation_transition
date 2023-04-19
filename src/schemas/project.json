@@ -1,0 +1,435 @@
+{
+  "Main" : {
+    "uid" : {
+      "type" : "UID",
+      "config" : {
+        "label" : "Slug",
+        "placeholder" : "SEO friendly slug"
+      }
+    },
+    "poster" : {
+      "type" : "Image",
+      "config" : {
+        "constraint" : { },
+        "thumbnails" : [ ],
+        "label" : "Poster"
+      }
+    },
+    "title" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading3",
+        "label" : "Title",
+        "placeholder" : "Project title ( Project name )"
+      }
+    },
+    "categories" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "category1" : {
+            "type" : "Link",
+            "config" : {
+              "select" : "document",
+              "customtypes" : [ "category_of_project" ],
+              "label" : "Category"
+            }
+          }
+        },
+        "label" : "Categories"
+      }
+    },
+    "body" : {
+      "type" : "Slices",
+      "fieldset" : "Slice zone",
+      "config" : {
+        "labels" : {
+          "hero_banner" : [ {
+            "display" : "Hero banner",
+            "name" : "hero_banner"
+          } ],
+          "intro" : [ {
+            "display" : "Intro block",
+            "name" : "intro_block"
+          } ],
+          "business" : [ {
+            "display" : "Business block",
+            "name" : "business_block"
+          } ],
+          "solution" : [ {
+            "display" : "Solution specialists",
+            "name" : "solution_specialists"
+          } ],
+          "branding_slider" : [ {
+            "display" : "Branding slider",
+            "name" : "branding_slider"
+          } ],
+          "design_stage" : [ {
+            "display" : "Design stage",
+            "name" : "design_stage"
+          } ],
+          "figma_design" : [ {
+            "display" : "Figma structure",
+            "name" : "figma_structure"
+          } ],
+          "uikit" : [ {
+            "display" : "ui-kit",
+            "name" : "ui-kit"
+          } ],
+          "final_result" : [ {
+            "display" : "final result",
+            "name" : "final_result"
+          } ],
+          "full_block_slider" : [ {
+            "display" : "final result slider",
+            "name" : "final_result_slider"
+          } ],
+          "solution_specialists" : [ {
+            "display" : "solution technologies",
+            "name" : "solution_technologies"
+          } ],
+          "branding_list" : [ {
+            "display" : "Branding list",
+            "name" : "branding_list"
+          } ],
+          "final_result_works_done" : [ {
+            "display" : "Works done",
+            "name" : "works_done"
+          } ],
+          "final_result_achievements" : [ {
+            "display" : "achievements",
+            "name" : "achievements"
+          } ]
+        },
+        "choices" : {
+          "hero_banner" : {
+            "type" : "Slice",
+            "fieldset" : "Hero Banner",
+            "description" : "First block on project page",
+            "icon" : "airplay",
+            "display" : "list",
+            "non-repeat" : {
+              "background_image" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "Background image"
+                }
+              },
+              "link" : {
+                "type" : "Link",
+                "config" : {
+                  "allowTargetBlank" : true,
+                  "label" : "Link",
+                  "placeholder" : "Link to project",
+                  "select" : null
+                }
+              }
+            },
+            "repeat" : { }
+          },
+          "intro" : {
+            "type" : "Slice",
+            "fieldset" : "Intro",
+            "description" : "Few words about project",
+            "icon" : "add_to_queue",
+            "display" : "list",
+            "non-repeat" : {
+              "background_image" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "Background image"
+                }
+              },
+              "preview_on_devices" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "Preview on devices"
+                }
+              },
+              "logo" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "Logo"
+                }
+              },
+              "description" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "paragraph,preformatted,strong,em,hyperlink",
+                  "label" : "Description",
+                  "placeholder" : "Small description"
+                }
+              }
+            },
+            "repeat" : { }
+          },
+          "business" : {
+            "type" : "Slice",
+            "fieldset" : "Business",
+            "description" : "Research & analysis",
+            "icon" : "business_center",
+            "display" : "list",
+            "non-repeat" : {
+              "description" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "paragraph,strong,em,hyperlink",
+                  "label" : "Description",
+                  "placeholder" : "Small description"
+                }
+              },
+              "wireframe" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "Wireframe"
+                }
+              }
+            },
+            "repeat" : { }
+          },
+          "solution" : {
+            "type" : "Slice",
+            "fieldset" : "Solution specialists",
+            "description" : "Solutions specialists",
+            "icon" : "question_answer",
+            "non-repeat" : { },
+            "repeat" : {
+              "specialists" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading6",
+                  "label" : "Specialists",
+                  "placeholder" : "Amount and type of specialist"
+                }
+              }
+            }
+          },
+          "branding_slider" : {
+            "type" : "Slice",
+            "fieldset" : "Branding slider",
+            "description" : "Branding slider",
+            "icon" : "image",
+            "display" : "list",
+            "non-repeat" : {
+              "background_cover" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "Background cover"
+                }
+              }
+            },
+            "repeat" : {
+              "slides" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "Slides"
+                }
+              },
+              "branding_list" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading6",
+                  "label" : "Branding list",
+                  "placeholder" : "What was done ( Logo development, ad materials...)"
+                }
+              }
+            }
+          },
+          "design_stage" : {
+            "type" : "Slice",
+            "fieldset" : "Design stage",
+            "description" : "Design stage",
+            "icon" : "format_paint",
+            "display" : "list",
+            "non-repeat" : {
+              "description" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph,preformatted,strong,em,hyperlink",
+                  "allowTargetBlank" : true,
+                  "label" : "Description",
+                  "placeholder" : "Small description"
+                }
+              },
+              "wireframe_image" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "Wireframe image"
+                }
+              }
+            },
+            "repeat" : { }
+          },
+          "figma_design" : {
+            "type" : "Slice",
+            "fieldset" : "Figma design",
+            "description" : "Image of figma design structure",
+            "icon" : "call_to_action",
+            "display" : "list",
+            "non-repeat" : {
+              "cover_image" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "Cover image"
+                }
+              }
+            },
+            "repeat" : { }
+          },
+          "uikit" : {
+            "type" : "Slice",
+            "fieldset" : "UiKit",
+            "description" : "Ui kit showcase",
+            "icon" : "adjust",
+            "display" : "list",
+            "non-repeat" : {
+              "description" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph,preformatted,strong,em,hyperlink",
+                  "allowTargetBlank" : true,
+                  "label" : "Description",
+                  "placeholder" : "Small description"
+                }
+              }
+            },
+            "repeat" : {
+              "ui_kit_slide" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "ui kit slide"
+                }
+              }
+            }
+          },
+          "final_result" : {
+            "type" : "Slice",
+            "fieldset" : "Final result",
+            "description" : "Final result",
+            "icon" : "add_to_queue",
+            "display" : "list",
+            "non-repeat" : {
+              "cover_image" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "Cover image"
+                }
+              }
+            },
+            "repeat" : { }
+          },
+          "full_block_slider" : {
+            "type" : "Slice",
+            "fieldset" : "Full block slider",
+            "description" : "Final result slider",
+            "icon" : "add_a_photo",
+            "display" : "list",
+            "non-repeat" : { },
+            "repeat" : {
+              "result_slide" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "Result slide"
+                }
+              }
+            }
+          },
+          "solution_specialists" : {
+            "type" : "Slice",
+            "fieldset" : "Solution technologies",
+            "description" : "Solutions technologies",
+            "icon" : "question_answer",
+            "display" : "list",
+            "non-repeat" : { },
+            "repeat" : {
+              "technologies" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading6",
+                  "label" : "Technologies",
+                  "placeholder" : "Tech stack used"
+                }
+              }
+            }
+          },
+          "branding_list" : {
+            "type" : "Slice",
+            "fieldset" : "Branding list",
+            "description" : "Branding list",
+            "icon" : "add",
+            "display" : "list",
+            "non-repeat" : { },
+            "repeat" : {
+              "branding_list_item" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading6",
+                  "label" : "Branding list item",
+                  "placeholder" : "( Logo development, ad materials...)"
+                }
+              }
+            }
+          },
+          "final_result_works_done" : {
+            "type" : "Slice",
+            "fieldset" : "Final result works done",
+            "description" : "Works done",
+            "icon" : "add_circle",
+            "display" : "list",
+            "non-repeat" : { },
+            "repeat" : {
+              "works_done" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading6",
+                  "label" : "Works done"
+                }
+              }
+            }
+          },
+          "final_result_achievements" : {
+            "type" : "Slice",
+            "fieldset" : "Final result achievements",
+            "description" : "Achievements",
+            "icon" : "add_alarm",
+            "display" : "list",
+            "non-repeat" : { },
+            "repeat" : {
+              "achievements" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading6",
+                  "label" : "Achievements"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

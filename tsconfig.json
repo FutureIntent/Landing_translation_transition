@@ -1,0 +1,101 @@
+{
+  "exclude": [
+    "node_modules",
+    "**/node_modules",
+    "**/.cache/*",
+    "**/public",
+    "types.generated.ts"
+  ],
+  "include": [
+    ".eslintrc.js",
+    "**/gatsby/**/*",
+    "**/src/**/*",
+    "**/__mocks__/**/*",
+    "**/test/**/*",
+    "**/index.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/**.test.*"
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "checkJs": true,
+    "declaration": true,
+    "outDir": "lib",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "paths": {
+      "@assets": [
+        "src/assets/"
+      ],
+      "@assets/*": [
+        "src/assets/*"
+      ],
+      "@interfaces": [
+        "src/interfaces/"
+      ],
+      "@interfaces/*": [
+        "src/interfaces/*"
+      ],
+      "@theme": [
+        "src/theme/"
+      ],
+      "@theme/*": [
+        "src/theme/*"
+      ],
+      "@pages": [
+        "src/pages"
+      ],
+      "@pages/*": [
+        "src/pages/*"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@providers": [
+        "src/providers"
+      ],
+      "@providers/*": [
+        "src/providers/*"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ],
+      "@hooks": [
+        "src/hooks"
+      ],
+      "@hooks/*": [
+        "src/hooks/*"
+      ],
+      "src/*": [
+        "src/*"
+      ]
+    },
+    "typeRoots": [
+      "node_modules/@types",
+      "src/@types"
+    ]
+  }
+}

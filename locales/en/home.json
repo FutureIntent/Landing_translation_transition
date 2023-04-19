@@ -1,0 +1,44 @@
+{
+    "intro": {
+        "span1": "AT THE END OF THE TUNNEL",
+        "span2": "WE ASSEMBLE",
+        "span3": "THE LIGHT",
+        "label": "Request project",
+        "link": "Search services"
+    },
+    "solutions": {
+        "span1": "WE",
+        "span2": "CREATE",
+        "span3": "HIGH-QUALITY DIGITAL",
+        "span4": "SOLUTIONS",
+        "description": "Perfect synergy of user experience, looks and technology. This is what Advertimo does. Established in 2018, we already achieved awesome results in IT-segment. We are the team of experienced visionaries and passionate creators."
+    },
+    "services": {
+        "heading": "Our services",
+        "question": "Ask question",
+        "label": "Request service",
+        "website&apps": {
+            "heading": "Websites & apps",
+            "paragraph1": "If you want your website to succeed in it’s aims, work on it should be handled professionally. Changes and improvements is a constant need in both business and web-environment.",
+            "paragraph2": "We customize all aspects of your site to meet the needs of your team or your audience and to make excellent user experience."
+        },
+        "branding": {
+            "heading": "Branding",
+            "paragraph1": "Branding is meant to create strong and positive perception of your company, its products and services in the customer’s mind.",
+            "paragraph2": "Effective branding differentiate companies from competitors and builds loyal customer base. Nothing sell products as much, as brands nowadays."
+        },
+        "marketing&ads": {
+            "heading": "Marketing & ads",
+            "paragraph1": "Right marketing strategy underlines business growth and, often, it’s very existence.",
+            "paragraph2": "And right strategy must be provided by excellent marketing materials, advertising tools, optimization, brand and social media involvement and ads themselves."
+        },
+        "code": {
+            "heading": "Code",
+            "paragraph1": "When it comes to measuring high-quality code, it becomes a tough task for any modern software sizing algorithm.",
+            "paragraph2": "Paying attention to code quality is crucial to secure the quality of user experience, project’s availability, business stability and user security. It also represents the expertise of your brand in creating tools of communication with your client."
+        }
+    },
+    "methology": {
+        "heading1": "Methodology"
+    }
+}
